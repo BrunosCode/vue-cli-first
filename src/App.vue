@@ -6,7 +6,7 @@
 <template>
   <div id="app">
     <appTitle msg="Welcome to Your Vue.js App" />
-    <appHero/>
+    <appHero :heroPath="hero.path" :heroTitle="hero.title"/>
   </div>
 </template>
 
@@ -22,7 +22,10 @@ export default {
   },
   data: function() {
     return {
-      
+      hero: {
+        path: "vue.png",
+        title: "Vue Hero"
+      }
     }
   }
 }
