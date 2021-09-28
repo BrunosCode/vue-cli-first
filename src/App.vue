@@ -1,17 +1,23 @@
+// Descrizione:
+// Create un nuovo progetto utilizzando Vue CLI: aiutatevi con le slide per ripercorrere i vari passaggi dell'installazione come visti a lezione.
+// Create e utilizzate un componente Title, il quale contiene un titolo che recita "La mia prima app con Vue CLI!"
+// Bonus:
+// Creare un secondo componente Hero, che visualizza un jumbotron.
+
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <appTitle msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import appTitle from './components/appTitle.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    appTitle
   }
 }
 </script>
