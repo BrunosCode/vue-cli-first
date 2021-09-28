@@ -3,21 +3,27 @@
 // Create e utilizzate un componente Title, il quale contiene un titolo che recita "La mia prima app con Vue CLI!"
 // Bonus:
 // Creare un secondo componente Hero, che visualizza un jumbotron.
-
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <appTitle msg="Welcome to Your Vue.js App"/>
+    <appTitle msg="Welcome to Your Vue.js App" />
+    <appHero/>
   </div>
 </template>
 
 <script>
 import appTitle from './components/appTitle.vue'
+import appHero from './components/appHero.vue'
 
 export default {
   name: 'App',
   components: {
-    appTitle
+    appTitle,
+    appHero
+  },
+  data: function() {
+    return {
+      
+    }
   }
 }
 </script>
@@ -29,6 +35,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 2rem;
+  
+  height: 100vh;
 }
 </style>
