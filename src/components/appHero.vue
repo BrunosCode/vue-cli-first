@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- <img src="../assets/vue.png" alt="Vue Hero" class="c-hero"/> -->
-    <img :src="require(`@/assets/img/${heroPath}`)" :alt="heroTitle" class="c-hero"/>
+    <!-- <img :src="require(`@/assets/img/${heroPath}`)" :alt="heroTitle" class="c-hero"/> -->
+    <img :src="heroPath" :alt="heroTitle" class="c-hero"/>
   </div>
 </template>
 

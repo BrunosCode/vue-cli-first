@@ -23,7 +23,7 @@ export default {
   data: function() {
     return {
       hero: {
-        path: "vue.png",
+        path: "./img/vue.png",
         title: "Vue Hero"
       }
     }
