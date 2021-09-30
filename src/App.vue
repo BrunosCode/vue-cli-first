@@ -6,7 +6,7 @@
 <template>
   <div id="app">
     <appTitle msg="Welcome to Your Vue.js App" />
-    <appHero :heroPath="hero.path" :heroTitle="hero.title"/>
+    <appHero :hero-path="hero.path" :hero-title="hero.title"/>
   </div>
 </template>
 
